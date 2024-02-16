@@ -7,7 +7,7 @@ const Card =(props)=>{
     const {store,actions}=useContext(Context)
     let field 
     props.type ==="person"?(
-        field = <div class="card" style="width: 18rem;">
+        field = <div class="card" style={{width: "18rem;"}}>
         <img src={`https://starwars-visualguide.com/assets/img/characters/${props.index + 1}.jpg`}
         onError={(e)=>{
             e.target.src='https://starwars-visualguide.com/assets/img/placeholder.jpg'
@@ -26,7 +26,7 @@ const Card =(props)=>{
       </div>
     ):null
  props.type ==="vehicle"?(
-        field = <div class="card" style="width: 18rem;">
+        field = <div class="card" style={{width: "18rem;"}}>
         <img src={`https://starwars-visualguide.com/assets/img/vehicles/${props.index + 1}.jpg`}
         onError={(e)=>{
             e.target.src='https://starwars-visualguide.com/assets/img/placeholder.jpg'
@@ -45,7 +45,7 @@ const Card =(props)=>{
       </div>
     ):null
     props.type ==="planet"?(
-      field = <div class="card" style="width: 18rem;">
+      field = <div class="card" style={{width: "18rem;"}}>
       <img src={`https://starwars-visualguide.com/assets/img/planets/${props.index + 1}.jpg`}
       onError={(e)=>{
           e.target.src='https://starwars-visualguide.com/assets/img/placeholder.jpg'
@@ -64,7 +64,7 @@ const Card =(props)=>{
     </div>
   ):null
   props.type ==="starship"?(
-    field = <div class="card" style="width: 18rem;">
+    field = <div class="card" style={{width: "18rem;"}}>
     <img src={`https://starwars-visualguide.com/assets/img/starships/${props.index + 1}.jpg`}
     onError={(e)=>{
         e.target.src='https://starwars-visualguide.com/assets/img/placeholder.jpg'
